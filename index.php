@@ -84,7 +84,7 @@ $db = [
             $album = $db[$i];
         ?>
 
-            <div><?php echo $album["poster"] . " " . $album["title"] . " " . $album["author"] . " " . $album["year"]?></div>
+            <div><?php echo $album["poster"] . "<br>" . $album["title"] . "<br>" . $album["author"] . "<br>" . $album["year"]?></div>
     <?php } ?>
 
 
