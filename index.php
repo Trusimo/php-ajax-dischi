@@ -1,8 +1,6 @@
-php
-
 <?php
 
-$album = [
+$db = [
     [
         "poster" => "https:\/\/www.onstageweb.com\/wp-content\/uploads\/2018\/09\/bon-jovi-new-jersey.jpg",
         "title" => "New Jersey",
@@ -81,6 +79,13 @@ $album = [
 </head>
 <body>
     
+    <?php
+        for ($i = 0; $i < count($db); $i++) {
+            $album = $db[$i];
+        ?>
+
+            <div><?php echo $album["poster"] . " " . $album["title"] . " " . $album["author"] . " " . $album["year"]?></div>
+    <?php } ?>
 
 
 
